@@ -4,11 +4,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BlogDeCafé</title>
+
+    <!-- Metadatos utiles para cuando compartimos el sitio -->
+    <meta property="og:title" content="BlogDeCafé - El mejor blog de café">
+    <meta property="og:description"
+        content="Descubre las mejores reseñas de café, recetas y recomendaciones para disfrutar de una buena taza de café.">
+    <meta property="og:url" content="https://dorigoBlogDeCafe.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Fuente de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="cursos.html">Cursos</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de Café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos </p>
+        </div>
+
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Nuestro Blog</h3>
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img src="img/blog1.jpg" alt="café molido">
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de Granos de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facilis veniam hic adipisci
+                        soluta neque iste repudiandae fuga aspernatur deserunt explicabo at assumenda, eius fugiat harum
+                        suscipit. Non, iste ipsam.</p>
+                    <a href="#" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img src="img/blog2.jpg" alt="café molido">
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facilis veniam hic adipisci
+                        soluta neque iste repudiandae fuga aspernatur deserunt explicabo at assumenda, eius fugiat harum
+                        suscipit. Non, iste ipsam.</p>
+                    <a href="#" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <img src="img/blog3.jpg" alt="café molido">
+                </div>
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios del Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facilis veniam hic adipisci
+                        soluta neque iste repudiandae fuga aspernatur deserunt explicabo at assumenda, eius fugiat harum
+                        suscipit. Non, iste ipsam.</p>
+                    <a href="#" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+            <ul class="cursos no-padding">
+                <li class="widget-curso">
+                    <h4 class="no-margin">Introducción al Mundo del Café</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Aprende los
+                        fundamentos del café, desde su origen hasta su preparación básica.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> Gratis</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 25</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Técnicas Avanzadas de Barismo</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Domina técnicas
+                        profesionales para crear cafés excepcionales.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> $50</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 15</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Cultura y Historia del Café</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Descubre las
+                        raíces culturales e históricas del café alrededor del mundo.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> Gratis</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 30</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Cata y Maridaje de Café</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Aprende a
+                        identificar sabores y combina el café con alimentos para realzar su sabor.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> $40</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 20</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Sistemas de Filtrado de Café</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Conoce los
+                        diferentes métodos de filtrado para obtener el mejor café.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> $30</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 20</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Café de Especialidad: De la Granja a la Taza</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Sigue el viaje
+                        del café desde su cultivo hasta su preparación.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> $60</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 10</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Preparación de Bebidas Frías con Café</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Explora recetas
+                        y técnicas para preparar deliciosas bebidas frías.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> $25</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 30</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Diseño de Menú de Cafetería</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Aprende a crear
+                        menús atractivos y funcionales para tu cafetería.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> $45</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 18</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Tendencias del Café en el Mundo</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Mantente
+                        actualizado con las últimas innovaciones en el mundo del café.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> Gratis</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 40</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+                <li class="widget-curso">
+                    <h4 class="no-margin">Manejo de Equipos Profesionales de Café</h4>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Descripción:</span> Aprende a
+                        utilizar equipos especializados en la preparación de café.</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Precio:</span> $50</p>
+                    <p class="widget-curso__label"><span class="widget-curso__info">Cupo:</span> 12</p>
+                    <a href="#" class="boton boton--secundario">Más Información</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a href="index.html" class="logo">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="cursos.html">Cursos</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
