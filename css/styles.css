@@ -181,11 +181,9 @@
             grid-template-columns: 2fr 1fr;
             gap: 4rem;
         }
+
+
     }
-
-    .blog {}
-
-    .sidebar {}
 
     .entrada {
         margin-bottom: 2rem;
@@ -326,5 +324,100 @@
     @media (max-width: 768px) {
         .nosotros-ocultar {
             display: none;
+        }
+    }
+
+    /* Cursos */
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 3rem 0rem;
+        border-bottom: 1px solid var(--gris);
+    }
+
+    @media (min-width: 768px) {
+        .curso {
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+        }
+    }
+
+    .curso:last-of-type {
+        border-bottom: none;
+    }
+
+    /* Contacto */
+
+    .contenedor-contacto {
+        position: relative;
+    }
+
+    .contacto-bg {
+        background-image: url(../img/contacto.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30rem;
+        background-repeat: no-repeat;
+    }
+
+
+    textarea {
+        resize: none;
+    }
+
+    .formulario {
+        padding: 5rem 3rem 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 90%;
+        margin: -10rem auto 10rem auto;
+        border: 1px solid var(--gris);
+        background-color: var(--blanco);
+    }
+
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (min-width: 768px) {
+        .campo {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            gap: 2rem;
+        }
+    }
+
+    .campo__label {
+        text-align: end;
+    }
+
+    .campo__input {
+        width: 90%;
+        border: 1px solid var(--gris);
+        padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .campo__input {
+            width: 100%;
+        }
+    }
+
+    .formulario .boton {
+        border: none;
+        margin: 0;
+    }
+
+    @media (min-width: 768px) {
+        .formulario .boton {
+            display: inline-block;
+            width: max-content;
+            align-self: flex-end;
+
         }
     }
